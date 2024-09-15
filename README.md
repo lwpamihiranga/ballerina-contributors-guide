@@ -4,3 +4,8 @@ This repository contains helpful tips for anyone looking to start contributing t
 
 Please note that I’m still at the beginning of my own journey, and I’ll be continuously adding more tips as I learn.
 
+## Pre-requisites
+
+- Start by following the [Download and Install](https://github.com/ballerina-platform/ballerina-distribution?tab=readme-ov-file#download-and-install) instructions in the [ballerina-distribution](https://github.com/ballerina-platform/ballerina-distribution) repository on how to set up Ballerina.
+
+- Next, review the [Contribution Guidelineas](https://github.com/ballerina-platform/ballerina-lang/blob/master/CONTRIBUTING.md) in the [ballerina-lang](https://github.com/ballerina-platform/ballerina-lang) repository to understand the process and expectations for contributing.
