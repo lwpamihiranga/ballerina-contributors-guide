@@ -9,3 +9,11 @@ Please note that I’m still at the beginning of my own journey, and I’ll be c
 - Start by following the [Download and Install](https://github.com/ballerina-platform/ballerina-distribution?tab=readme-ov-file#download-and-install) instructions in the [ballerina-distribution](https://github.com/ballerina-platform/ballerina-distribution) repository on how to set up Ballerina.
 
 - Next, review the [Contribution Guidelineas](https://github.com/ballerina-platform/ballerina-lang/blob/master/CONTRIBUTING.md) in the [ballerina-lang](https://github.com/ballerina-platform/ballerina-lang) repository to understand the process and expectations for contributing.
+
+## How to build locally
+
+You can run the below command in the root for repository directory. `-x test -x check` flags avoid running tests & checks to make the local build faster.
+
+```shell
+./gradlew build -x test -x check
+```
