@@ -37,3 +37,33 @@ PATH=<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracte
 ```
 
 After setting the `PATH`, you can directly use `bal` commands in your shell session, and it will reference the newly built binaries.
+
+## How to debug attaching a debugger
+
+To debug by attaching a debugger, follow these steps:
+
+- Step 1: Set Up the Debugging Environment
+
+First, configure the necessary environment variable to enable debugging. Set the `BAL_JAVA_DEBUG` variable to the desired port (e.g., `5005`):
+
+```shell
+export BAL_JAVA_DEBUG=5005
+```
+
+- Step 2: Run the `bal` command 
+
+Execute the desired `bal` command (e.g., `bal build`, `bal run`), and you'll see a message indicating that the debugger is listening on the specified port:
+
+- Step 3: Configure IntelliJ IDEA for Debugging
+    
+    - Open IntelliJ IDEA.
+    - Navigate to **Run -> Edit Configurations**.
+    - Click **Add** and select **Remote JVM Debug**.
+    - Configure the remote debugger settings, ensuring the port matches the one set in Step 1 (`5005`). The default configuration should work fine.
+    - Set a meaningful **Name** for the configuration, then click **Apply**.
+
+- Step 4: Set Breakpoints and Start Debugging 
+
+    - Add breakpoints in your code where you want the debugger to pause.
+    - Run the configuration you created in IntelliJ IDEA.
+    - The debugger will attach to the running process, and execution will pause at the breakpoints you set. You can now inspect variables, step through code, and debug as needed.
