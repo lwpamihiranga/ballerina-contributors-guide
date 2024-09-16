@@ -17,3 +17,19 @@ You can run the below command in the root for repository directory. `-x test -x 
 ```shell
 ./gradlew build -x test -x check
 ```
+
+## How to run after build
+
+You can use the extracted bal executor in extracted zip.
+
+```shell
+<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT/bin/bal build
+```
+
+You can set the path for the current shell using below command.
+
+```shell
+PATH=<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT/bin:$PATH
+```
+
+Then you can run bal build, bal run etc. The shell will use the new build which is located in the above dir.
