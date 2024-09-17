@@ -68,22 +68,34 @@ Execute the desired `bal` command (e.g., `bal build`, `bal run`), and you'll see
     - Run the configuration you created in IntelliJ IDEA.
     - The debugger will attach to the running process, and execution will pause at the breakpoints you set. You can now inspect variables, step through code, and debug as needed.
 
-## How to setup Ballerina VS Code Extenstion for debug
+## Setting Up Ballerina VS Code Extension for Debugging
 
-1. Open the Ballerina VS Code extension settings and enable the `Plugin Dev Mode` checkbox.
-2. Set the Ballerina `Home` path to the distribution pack you built from the ballerina-platform/lang repository.
+- Step 1: Enable Plugin Development Mode
+    
+    - Open VS Code and go to the Ballerina Extension Settings.
+    - Enable the `Plugin Dev Mode` checkbox to allow the use of the locally built Ballerina distribution.
 
-```shell
+- Step 2: Set the Ballerina Home Path
+
+Set the `Home` path to the distribution pack you built from the Ballerina platform repository:
+
+```bash
 <BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT
 ```
 
-3. Restart VS Code to apply the changes.
+- Step 3: Restart VS Code
 
-or
+To apply the changes, restart VS Code.
 
-Set the `"ballerina.pluginDevMode"` and `"ballerina:home"` in you vscode's settings.json file.
+### Alternative: Configure via settings.json
 
+Alternatively, you can directly configure these settings in your VS Code `settings.json` file:
+
+```json
+{
+    "ballerina.pluginDevMode": true,
+    "ballerina.home": "<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT"
+}
 ```
-"ballerina.pluginDevMode": true,
-"ballerina.home": "<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT",
-```
+
+Once the configuration is set, restart VS Code, and the extension will use the locally built Ballerina distribution for debugging and other features.
