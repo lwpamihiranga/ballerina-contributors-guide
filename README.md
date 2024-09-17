@@ -59,6 +59,8 @@ export BAL_JAVA_DEBUG=5005
 
 Execute the desired `bal` command (e.g., `bal build`, `bal run`), and you'll see a message indicating that the debugger is listening on the specified port:
 
+![set_debug_port](https://github.com/user-attachments/assets/f2e9927c-a035-4456-84d9-e9619df02a11)
+
 - Step 3: Configure IntelliJ IDEA for Debugging
     
     - Open IntelliJ IDEA.
