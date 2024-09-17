@@ -67,3 +67,23 @@ Execute the desired `bal` command (e.g., `bal build`, `bal run`), and you'll see
     - Add breakpoints in your code where you want the debugger to pause.
     - Run the configuration you created in IntelliJ IDEA.
     - The debugger will attach to the running process, and execution will pause at the breakpoints you set. You can now inspect variables, step through code, and debug as needed.
+
+## How to setup Ballerina VS Code Extenstion for debug
+
+1. Open the Ballerina VS Code extension settings and enable the `Plugin Dev Mode` checkbox.
+2. Set the Ballerina `Home` path to the distribution pack you built from the ballerina-platform/lang repository.
+
+```shell
+<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT
+```
+
+3. Restart VS Code to apply the changes.
+
+or
+
+Set the `"ballerina.pluginDevMode"` and `"ballerina:home"` in you vscode's settings.json file.
+
+```
+"ballerina.pluginDevMode": true,
+"ballerina.home": "<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracted-distributions/jballerina-tools-<VERSION>-SNAPSHOT",
+```
