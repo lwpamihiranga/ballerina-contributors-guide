@@ -41,6 +41,8 @@ PATH=<BASE_PATH>/ballerina-lang/distribution/zip/jballerina-tools/build/extracte
 
 After setting the `PATH`, you can directly use `bal` commands in your shell session, and it will reference the newly built binaries.
 
+![run_using_build](https://github.com/user-attachments/assets/5cbdffb3-7954-4e5a-af58-e1eb26653129)
+
 ## How to debug attaching a debugger
 
 To debug by attaching a debugger, follow these steps:
