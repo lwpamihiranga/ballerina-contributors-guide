@@ -75,6 +75,8 @@ Execute the desired `bal` command (e.g., `bal build`, `bal run`), and you'll see
     - Run the configuration you created in IntelliJ IDEA.
     - The debugger will attach to the running process, and execution will pause at the breakpoints you set. You can now inspect variables, step through code, and debug as needed.
 
+![intellij_debug_setup](https://github.com/user-attachments/assets/58c6725c-f2e6-4f6e-8bcd-2c09ff5f995f)
+
 ## Setting Up Ballerina VS Code Extension for Debugging
 
 - Step 1: Enable Plugin Development Mode
