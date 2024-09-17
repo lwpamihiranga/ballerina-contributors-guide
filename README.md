@@ -4,6 +4,8 @@ This repository contains helpful tips for anyone looking to start contributing t
 
 Please note that I’m still at the beginning of my own journey, and I’ll be continuously adding more tips as I learn.
 
+> Note: The tips and configurations provided in this guide are based on the tools I use—OS: Pop!_OS, Shell: Zsh, and IDE: IntelliJ IDEA Community Edition. However, the instructions should generally apply to other environments and tools as well, as the overall setup and configurations are quite similar across platforms.
+
 ## Pre-requisites
 
 - Start by following the [Download and Install](https://github.com/ballerina-platform/ballerina-distribution?tab=readme-ov-file#download-and-install) instructions in the [ballerina-distribution](https://github.com/ballerina-platform/ballerina-distribution) repository on how to set up Ballerina.
