@@ -19,6 +19,7 @@ You can run the below command in the root for repository directory. `-x test -x 
 ```shell
 ./gradlew build -x test -x check
 ```
+![build ballerina](https://github.com/user-attachments/assets/3150aa74-8973-498e-872e-708901ea6593)
 
 ## How to run after build
 
